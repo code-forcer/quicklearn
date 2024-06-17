@@ -6,7 +6,7 @@ import axios from 'axios';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
-const Dashboard = () => {
+const Home = () => {
   const [dashboardData, setDashboardData] = useState(null);
   const navigate = useNavigate();
   useEffect(() => {
@@ -19,7 +19,7 @@ const Dashboard = () => {
             'Authorization': `Bearer ${token}`
           }
         };
-        const response = await axios.get('https://quicklearn-twi3.onrender.com/api/dashboard', config);
+        const response = await axios.get('https://quicklearn-we95.onrender.com/api/dashboard', config);
         setDashboardData(response.data);
       } catch (error) {
         console.error('Error fetching dashboard data:', error);
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://quicklearn-twi3.onrender.com/api/videos?subject=${subject}`);
+      const response = await axios.get(`https://quicklearn-we95.onrender.com/api/videos?subject=${subject}`);
       setVideos(response.data);
     } catch (error) {
       console.error('Error fetching videos:', error);
@@ -45,8 +45,9 @@ const Dashboard = () => {
   };
 
   return (
-       <div className="App">
+    <h2>
       {dashboardData ? (
+         <div className="App">
         <p>Welcome, <span className='bearername'>{dashboardData.authData.email}</span><br/>
         <button  className='react' style={{color:'#ce1212'}} onClick={handleLogout}>Logout</button>
         </p>
@@ -74,10 +75,10 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-
-      ) : (<p>Loading...</p>)}
       </div>
+      ) : (<p>Loading...</p>)}
+    </h2>
   );
 };
 
-export default Dashboard;
+export default Home;
