@@ -1,0 +1,72 @@
+.container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #696969;
+  }
+  .container h1{
+    color: #12111f;
+    text-align: center;
+  }
+  .container .get-account{
+    color: #696969;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+  
+  label {
+    display: block;
+    color: #12111f;
+    font-weight: bold;
+    font-size:25px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+.submitbutton{
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    background-color: #ce1212;
+}
+.checkbox{
+  color: #04aeff;
+  padding: 2px;
+}
+.bearername{
+  color: #04aeff;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* dashbaord */
+/* src/App.css */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-item {
+  margin: 10px;
+}
+.App{
+  
+}
