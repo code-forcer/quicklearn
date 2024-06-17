@@ -19,7 +19,7 @@ const Home = () => {
             'Authorization': `Bearer ${token}`
           }
         };
-        const response = await axios.get('https://quicklearn-we95.onrender.com/api/dashboard', config);
+        const response = await axios.get('https://quicklearn-twi3.onrender.com/api/dashboard', config);
         setDashboardData(response.data);
       } catch (error) {
         console.error('Error fetching dashboard data:', error);
@@ -33,7 +33,7 @@ const Home = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://quicklearn-we95.onrender.com/api/videos?subject=${subject}`);
+      const response = await axios.get(`https://quicklearn-twi3.onrender.com/api/videos?subject=${subject}`);
       setVideos(response.data);
     } catch (error) {
       console.error('Error fetching videos:', error);
