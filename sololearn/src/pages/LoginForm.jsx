@@ -15,7 +15,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://quicklearn-we95.onrender.com/api/login', { email, password });
+      const response = await axios.post('https://quicklearn-twi3.onrender.com/api/login', { email, password });
       const token = response.data.token;
       localStorage.setItem('token', token); // Store token in local storage
       console.log('Login successful');
