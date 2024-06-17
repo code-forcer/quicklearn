@@ -59,13 +59,12 @@ button {
 }
 
 .video-list {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .video-item {
-  margin: 10px;
+  margin: auto;
 }
 .App {
   width: 100%;
