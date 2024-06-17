@@ -45,7 +45,7 @@ const Home = () => {
   };
 
   return (
-    <h2>
+    <h2 style={{backgroundColor:"#12111f"}}>
       {dashboardData ? (
          <div className="App">
         <p>Welcome, <span className='bearername'>{dashboardData.authData.email}</span><br/>
