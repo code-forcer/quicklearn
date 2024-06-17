@@ -17,7 +17,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post('https://quicklearn-we95.onrender.com/api/register', {
+    const response = await axios.post('https://quicklearn-twi3.onrender.com/api/register', {
       username,
       email,
       password
