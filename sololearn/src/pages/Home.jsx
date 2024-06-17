@@ -19,7 +19,7 @@ const Dashboard = () => {
             'Authorization': `Bearer ${token}`
           }
         };
-        const response = await axios.get('https://quicklearn-we95.onrender.com/api/dashboard', config);
+        const response = await axios.get('https://quicklearn-twi3.onrender.com/api/dashboard', config);
         setDashboardData(response.data);
       } catch (error) {
         console.error('Error fetching dashboard data:', error);
