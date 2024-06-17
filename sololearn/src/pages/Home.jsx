@@ -64,8 +64,8 @@ const Home = () => {
               <div key={video.id} className="video-item">
                 <h3>{video.title}</h3>
                 <iframe
-                  width="560"
-                  height="315"
+                  width="460"
+                  height="215"
                   src={`https://www.youtube.com/embed/${video.id}`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
