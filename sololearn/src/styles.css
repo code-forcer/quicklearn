@@ -67,3 +67,11 @@ button {
 .video-item {
   margin: 10px;
 }
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #12111f; /* Background color for the app */
+}
