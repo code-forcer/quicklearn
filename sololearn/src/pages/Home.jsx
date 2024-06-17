@@ -45,9 +45,8 @@ const Dashboard = () => {
   };
 
   return (
-    <h2>
+       <div className="App">
       {dashboardData ? (
-         <div>
         <p>Welcome, <span className='bearername'>{dashboardData.authData.email}</span><br/>
         <button  className='react' style={{color:'#ce1212'}} onClick={handleLogout}>Logout</button>
         </p>
@@ -75,9 +74,9 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-      </div>
+
       ) : (<p>Loading...</p>)}
-    </h2>
+      </div>
   );
 };
 
