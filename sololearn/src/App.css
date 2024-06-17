@@ -2,7 +2,7 @@ body{
   background: #12111f;
   color: whitesmoke;
 }
-#root {
+#root, App {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
